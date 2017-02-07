@@ -27,6 +27,7 @@
         [names addObject:ivarName];
     }
     return names;
+    //1234567890-
     
 }
 +(NSMutableArray*)ls_getPropertyNames
