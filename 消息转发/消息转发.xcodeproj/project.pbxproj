@@ -18,6 +18,7 @@
 		28637F9B1DF90090008050CD /* LSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28637F9A1DF90090008050CD /* LSView.m */; };
 		28637F9E1DF90A06008050CD /* LSView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 28637F9D1DF90A06008050CD /* LSView2.m */; };
 		28637FAA1DF91155008050CD /* NSObject+LSRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 28637FA91DF91155008050CD /* NSObject+LSRunTime.m */; };
+		CD1CB5DA1E72B57800714692 /* LSNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1CB5D91E72B57800714692 /* LSNotifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		28637F9D1DF90A06008050CD /* LSView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSView2.m; sourceTree = "<group>"; };
 		28637FA81DF91155008050CD /* NSObject+LSRunTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LSRunTime.h"; sourceTree = "<group>"; };
 		28637FA91DF91155008050CD /* NSObject+LSRunTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LSRunTime.m"; sourceTree = "<group>"; };
+		CD1CB5D81E72B57800714692 /* LSNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNotifier.h; sourceTree = "<group>"; };
+		CD1CB5D91E72B57800714692 /* LSNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNotifier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,18 +115,14 @@
 			children = (
 				28637FA81DF91155008050CD /* NSObject+LSRunTime.h */,
 				28637FA91DF91155008050CD /* NSObject+LSRunTime.m */,
+				CD1CB5D81E72B57800714692 /* LSNotifier.h */,
+				CD1CB5D91E72B57800714692 /* LSNotifier.m */,
 				28637F991DF90090008050CD /* LSView.h */,
 				28637F9A1DF90090008050CD /* LSView.m */,
-				28637F9D1DF90A06008050CD /* LSView2.m */,
 				28637F9C1DF90A06008050CD /* LSView2.h */,
-				28637F691DF8FA2A008050CD /* AppDelegate.h */,
-				28637F6A1DF8FA2A008050CD /* AppDelegate.m */,
+				28637F9D1DF90A06008050CD /* LSView2.m */,
 				28637F6C1DF8FA2A008050CD /* ViewController.h */,
 				28637F6D1DF8FA2A008050CD /* ViewController.m */,
-				28637F6F1DF8FA2B008050CD /* Main.storyboard */,
-				28637F721DF8FA2B008050CD /* Assets.xcassets */,
-				28637F741DF8FA2B008050CD /* LaunchScreen.storyboard */,
-				28637F771DF8FA2B008050CD /* Info.plist */,
 				28637F661DF8FA2A008050CD /* Supporting Files */,
 			);
 			path = "消息转发";
@@ -132,6 +131,12 @@
 		28637F661DF8FA2A008050CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28637F741DF8FA2B008050CD /* LaunchScreen.storyboard */,
+				28637F771DF8FA2B008050CD /* Info.plist */,
+				28637F6F1DF8FA2B008050CD /* Main.storyboard */,
+				28637F721DF8FA2B008050CD /* Assets.xcassets */,
+				28637F691DF8FA2A008050CD /* AppDelegate.h */,
+				28637F6A1DF8FA2A008050CD /* AppDelegate.m */,
 				28637F671DF8FA2A008050CD /* main.m */,
 			);
 			name = "Supporting Files";
@@ -222,7 +227,7 @@
 				TargetAttributes = {
 					28637F621DF8FA2A008050CD = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = U7SJ4KA3L8;
+						DevelopmentTeam = TMHG22C2C5;
 						ProvisioningStyle = Automatic;
 					};
 					28637F7B1DF8FA2B008050CD = {
@@ -295,6 +300,7 @@
 				28637F9B1DF90090008050CD /* LSView.m in Sources */,
 				28637F6B1DF8FA2A008050CD /* AppDelegate.m in Sources */,
 				28637F681DF8FA2A008050CD /* main.m in Sources */,
+				CD1CB5DA1E72B57800714692 /* LSNotifier.m in Sources */,
 				28637FAA1DF91155008050CD /* NSObject+LSRunTime.m in Sources */,
 				28637F9E1DF90A06008050CD /* LSView2.m in Sources */,
 			);
@@ -443,10 +449,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U7SJ4KA3L8;
+				DEVELOPMENT_TEAM = TMHG22C2C5;
 				INFOPLIST_FILE = "消息转发/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kuaichengwuliu.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mytogo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -455,10 +461,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U7SJ4KA3L8;
+				DEVELOPMENT_TEAM = TMHG22C2C5;
 				INFOPLIST_FILE = "消息转发/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kuaichengwuliu.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mytogo.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

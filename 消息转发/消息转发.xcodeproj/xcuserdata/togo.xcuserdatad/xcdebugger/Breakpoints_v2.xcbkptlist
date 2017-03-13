@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "&#x6d88;&#x606f;&#x8f6c;&#x53d1;/LSNotifier.m"
+            timestampString = "511070812.151344"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "-forwardInvocation:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LSNotifier forwardInvocation:]"
+                  moduleName = "&#x6d88;&#x606f;&#x8f6c;&#x53d1;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/togo/RuntimeDemo/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91/LSNotifier.m"
+                  timestampString = "511070813.183361"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LSNotifier forwardInvocation:]"
+                  moduleName = "&#x6d88;&#x606f;&#x8f6c;&#x53d1;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/togo/RuntimeDemo/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91/%E6%B6%88%E6%81%AF%E8%BD%AC%E5%8F%91/LSNotifier.m"
+                  timestampString = "511070813.184956"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

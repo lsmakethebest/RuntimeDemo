@@ -16,7 +16,8 @@
 -(void)click:(NSInteger)index
 
 {
-    NSLog(@"111111111111111111-----%d",index);
+    self.backgroundColor=RandomColor;
+    NSLog(@"View1-----%d",index);
 }
 
 +(void)load

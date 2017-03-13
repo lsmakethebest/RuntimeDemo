@@ -11,14 +11,19 @@
 #import "LSView2.h"
 #import <objc/runtime.h>
 
+
+
+@interface ViewControllerNotofier : LSNotifier<ViewController>
+
+@end
+@implementation ViewControllerNotofier
+@end
+
 @interface ViewController ()
 
-{
-    
-    NSString *myName;
-}
 @property (weak, nonatomic) IBOutlet LSView *myView;
 @property (weak, nonatomic) IBOutlet LSView2 *myView2;
+@property (nonatomic,strong) ViewControllerNotofier *notifier;
 
 @end
 
@@ -26,65 +31,20 @@
 
 @implementation ViewController
 
-
-//-(void)click:(NSInteger)index
-//{
-//    NSLog(@"click");
-//}
-
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+-(void)viewDidLoad
 {
-    [self click:100];
-}
-
-
-+(BOOL)resolveInstanceMethod:(SEL)sel
-
-{
-    if (sel ==@selector(click:)) {
-        //        class_addMethod([self class], sel, imp_implementationWithBlock(^(id self, NSString *word) {
-        //                        NSLog(@"method resolution" );
-        //                    }), "v@*");
-        
-        //v@*  格式类型查看链接  https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100-SW1
-        return NO;
-    }
-    return YES;
-}
-
-//-(id)forwardingTargetForSelector:(SEL)aSelector
-//{
-//    if (aSelector ==@selector(click:)) {
-//
-//        return [super forwardingTargetForSelector:aSelector];
-//    }
-//    return  self.myView;
-//}
-
-
--(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
-{
+    [super viewDidLoad];
+    self.notifier=[ViewControllerNotofier notifier];
     
-    NSMethodSignature *methodSignature = [super methodSignatureForSelector:aSelector];
-    if (!methodSignature) {
-        //NSMethodSignature * methodSignature = [self.myView methodSignatureForSelector:aSelector];
-        methodSignature =[NSMethodSignature signatureWithObjCTypes:"v@:*"];
-    }
-    return methodSignature;
+    [self.notifier addObserver:self.myView];
+    [self.notifier addObserver:self.myView2];
+    
 }
 
--(void)forwardInvocation:(NSInvocation *)anInvocation
-{
+- (IBAction)buttonClick:(id)sender {
 
-        if ([self.myView respondsToSelector:anInvocation.selector]) {
-            [anInvocation invokeWithTarget:self.myView];
-        }
-        if ([self.myView2 respondsToSelector:anInvocation.selector]) {
-            [anInvocation invokeWithTarget:self.myView2];
-        }
+    LSNotifObservers(click:5);
+
 }
-
-
 
 @end

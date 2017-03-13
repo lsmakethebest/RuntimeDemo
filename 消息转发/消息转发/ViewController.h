@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSNotifier.h"
+
+@protocol ViewController <NSObject>
+
+- (void)click:(NSInteger)integer;
+
+@end
+
+
 @interface ViewController : UIViewController
 
--(void)click:(NSInteger)index;
+
 @end
 
